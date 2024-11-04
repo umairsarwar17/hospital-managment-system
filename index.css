@@ -1,0 +1,550 @@
+:root {
+    --green: #16a085;
+    --black: #444;
+    --light-color: #111;
+    --box-shadow: 1px 1px 2px rgba(22, 160, 133, .2);
+    --text-shadow: .4rem .4rem 0 rgb(0.0, 0, .2);
+    --border: 2px solid var(--green);
+}
+
+* {
+    font-family: 'poppins' sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all, 0.2s, ease-in-out;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 2rem 9%;
+
+}
+
+section:nth-child(even) {
+    background-color: #f5f5f5;
+
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 5rem;
+    letter-spacing: .4rem;
+}
+
+.heading span {
+    color: var(--green);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px;
+    padding-left: 1px;
+    border: var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    font-size: 1.3rem;
+    background-color: #fff;
+    color: var(--green);
+}
+
+.btn i {
+    color: white;
+    background-color: #16a085;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.btn:hover {
+    background-color: var(--green);
+    color: white;
+}
+
+.btn:hover i {
+    color: var(--green);
+    background-color: #fff;
+    margin-left: 7px;
+}
+
+/* ........................ */
+header {
+
+    position: fixed;
+    padding: 2rem 9%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0, .5rem, 1.5rem rgb(0.0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #16a085;
+    flex-grow: 1;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+header .logo i {
+    color: red;
+}
+
+header .navbar a {
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+}
+
+header .navbar a:hover {
+    color: red;
+}
+
+#menu {
+    font-size: 20px;
+    background-color: var(--green);
+    border-radius: 10px;
+    display: none;
+    color: white;
+    padding: 1rem, 1.5rem;
+    cursor: pointer;
+}
+
+/* .................................... */
+.Home .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10rem;
+    gap: 1.5rem;
+}
+
+.Home .image {
+    flex: 1 1 45rem;
+}
+
+.Home .image img {
+    width: 100%;
+}
+
+.Home .content {
+    flex: 1 1 45rem;
+}
+
+.Home .content h1 {
+    font-size: 20px;
+    color: var(--black);
+    line-height: 1.8;
+    text-shadow: var(--text-shadow);
+}
+
+.Home .content p {
+    font-size: 20px;
+    color: var(--light-color);
+    line-height: 1.8;
+    padding: 1rem 0rem;
+}
+
+/* ............................... */
+.histry {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding: 5rem 0;
+}
+
+.histry .histry1 {
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.histry1 i {
+    font-size: 30px;
+    padding: 10px 0px;
+    color: var();
+}
+
+.histry1 h1 {
+    font-size: 20px;
+    padding: 10px;
+    color: var(--black);
+}
+
+.histry1 p {
+    font-size: 16px;
+    color: var(--light-color);
+}
+
+/* ................................ */
+.about .row2 {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.about .row2 .image {
+    flex: 1 1 45rem;
+}
+
+.about .row2 .content {
+    flex: 1 1 45rem;
+}
+
+.about .row2 h1 {
+    color: var(--black);
+    font-size: 20px;
+    text-shadow: var(--text-shadow);
+    line-height: 1.8;
+}
+
+.about .row2 p {
+    color: var(--black);
+    font-size: 20px;
+
+    line-height: 1.2;
+
+}
+
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
+.Service .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+}
+
+.Service .box-container .box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 10px;
+}
+
+.Service .box-container .box h1 {
+    font-size: 20px;
+    color: var(--black);
+    padding: 10px 0;
+}
+
+.Service .box-container .box p {
+    font-size: 13px;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+.Service .box-container .box i {
+    font-size: 25px;
+    padding-bottom: 6px;
+}
+
+/* ....................................... */
+.Doctors .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.Doctors .box-container .box {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+}
+
+.Doctors .box-container .box img {
+    margin: 5px 0px;
+    border: var(--border);
+    height: 20rem;
+    border-radius: 10px;
+}
+
+.Doctors .box-container .box h1 {
+    font-size: 25px;
+    color: var(--black);
+}
+
+.Doctors .box-container .box p {
+    font-size: 14px;
+    color: var(--green);
+}
+
+.Doctors .box-container .box .tags i {
+    font-size: 25px;
+    padding: 2px;
+    border: 1px solid #16a085;
+    background-color: #fff;
+    color: var(--green);
+    border-radius: 10px;
+}
+
+.Doctors .box-container .box .tags i:hover {
+    background-color: var(--green);
+    color: white;
+}
+
+/* .......................... */
+.Appointment .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.Appointment .row .image {
+    flex: 1 1 45rem;
+}
+
+.Appointment .row form {
+    flex: 1 1 45rem;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.Appointment .row form h1 {
+    font-size: 25px;
+}
+
+.Appointment .row form input {
+    border: 1px solid;
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.Appointment .row form button {
+    margin: 0px 130px;
+}
+
+/* ........................ */
+.Review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+}
+
+.Review .box-container .box {
+    border: var(--border);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    text-align: center;
+    z-index: 0;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    height: 280px;
+    width: 240px;
+}
+
+.Review .box-container .box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #16a085;
+}
+
+.Review .box-container .box h1 {
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.Review .box-container .box .star i {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.Review .box-container .box p {
+    font-size: 15px;
+}
+
+.Review .box-container .box::before {
+    content: '';
+    position: absolute;
+    top: -7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--green);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 25rem;
+    width: 120%;
+    z-index: -1;
+}
+
+/* .......................... */
+.Blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+}
+
+.Blogs .box-container .box {
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.Blogs .box-container .box img {
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 10px;
+    border: var(--green);
+}
+
+.Blogs .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Blogs .box-container .box .content {
+    padding-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+
+.Blogs .box-container .box .content span:hover {
+    color: #16a085;
+}
+
+.Blogs .box-container .box h1 {
+    font-size: 16px;
+    color: var(--black);
+    margin-top: 10px;
+}
+
+.Blogs .box-container .box p {
+    font-size: 16px;
+    color: var(--light-color);
+    margin-top: 10px;
+}
+
+/* .......................... */
+footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+
+}
+
+footer .box-container h1 {
+    color: var(--black);
+    font-size: 20px;
+}
+
+footer .box-container .box a {
+    color: var(--light-color);
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+}
+
+footer .box-container a i {
+    color: #16a085;
+}
+
+/* .......................... */
+.last {
+    text-align: center;
+}
+
+.last span {
+    color: #16a085;
+}
+
+/* .................................... */
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    header {
+        padding: 2rem;}
+    section {
+        padding: 2rem;
+    }
+}
+header #menu {
+    display: none;
+}
+@media(max-width:760px) {
+    #menu {
+    display: initial;
+    }
+    header .navbar {
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 2rem;
+        border-radius: 10px;
+        box-shadow: var(--box-shadow);
+        border: var(--border);
+        background-color: #fff;
+        transform: scale(0);
+        transform-origin: top right;
+        transition: none;
+        flex-direction: column;
+        align-items: flex-end;
+        width: auto;
+    }
+    header .navbar.active {
+        transform: scale(1);
+        opacity: 1;
+        transition: .2s ease-in-out;
+        display: flex;
+    }
+    header .navbar a {
+        font-size: 2rem;
+        margin: 1rem 0;
+        padding: 10px;
+    }
+}
+@media(max-width:460px) {
+
+    html {
+        font-size: 50%;
+
+    }
+    /* ................................. */
+
+
+
+
+
+
+}
